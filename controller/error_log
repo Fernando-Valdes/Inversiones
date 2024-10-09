@@ -1,0 +1,291 @@
+[03-Oct-2024 15:34:41 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:34:41 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:34:43 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:34:43 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:34:44 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:34:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:34:45 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:34:45 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:35:03 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:35:03 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:35:06 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:35:06 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:35:11 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:35:11 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:35:16 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:35:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:35:18 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 15:35:18 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 20:41:10 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 20:41:10 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 20:41:15 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 20:41:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 20:41:23 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 20:41:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 20:41:23 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 20:41:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 20:41:23 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[03-Oct-2024 20:41:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[04-Oct-2024 00:17:23 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[04-Oct-2024 00:17:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[04-Oct-2024 00:17:27 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[04-Oct-2024 00:17:27 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[04-Oct-2024 00:17:27 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[04-Oct-2024 00:17:27 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[04-Oct-2024 19:58:01 America/Mexico_City] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes) in /home4/ewsanali/public_html/controller/indexController.php on line 97
+[04-Oct-2024 19:58:15 America/Mexico_City] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes) in /home4/ewsanali/public_html/controller/indexController.php on line 97
+[05-Oct-2024 10:34:11 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[05-Oct-2024 10:34:11 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[05-Oct-2024 10:34:15 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[05-Oct-2024 10:34:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[05-Oct-2024 23:45:59 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[05-Oct-2024 23:45:59 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 09:17:46 America/Mexico_City] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes) in /home4/ewsanali/public_html/controller/indexController.php on line 97
+[06-Oct-2024 09:17:59 America/Mexico_City] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes) in /home4/ewsanali/public_html/controller/indexController.php on line 97
+[06-Oct-2024 14:29:10 America/Mexico_City] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes) in /home4/ewsanali/public_html/controller/indexController.php on line 97
+[06-Oct-2024 14:29:22 America/Mexico_City] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes) in /home4/ewsanali/public_html/controller/indexController.php on line 97
+[06-Oct-2024 15:14:07 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:07 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:09 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:09 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:11 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:11 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:12 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:12 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:12 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:15 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:15 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:15 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:15 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:15 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:15 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:16 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:16 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:16 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:16 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:16 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:17 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 15:14:17 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[06-Oct-2024 16:27:17 America/Mexico_City] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes) in /home4/ewsanali/public_html/controller/indexController.php on line 97
+[06-Oct-2024 16:27:29 America/Mexico_City] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes) in /home4/ewsanali/public_html/controller/indexController.php on line 97
+[06-Oct-2024 16:27:40 America/Mexico_City] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes) in /home4/ewsanali/public_html/controller/indexController.php on line 97
+[06-Oct-2024 16:27:52 America/Mexico_City] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 16777224 bytes) in /home4/ewsanali/public_html/controller/indexController.php on line 97
+[07-Oct-2024 11:42:17 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 11:42:17 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 11:48:49 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 11:48:49 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 11:52:21 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 11:52:21 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 11:52:28 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 11:52:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 12:00:45 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 12:00:45 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 12:01:25 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 12:01:25 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 12:01:28 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 12:01:28 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 12:28:40 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 12:28:40 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 12:32:16 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 12:32:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 13:14:01 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 13:14:01 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:29:23 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:29:23 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:47:33 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:47:33 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:50:10 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:50:10 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:50:12 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:50:12 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:51:50 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:51:50 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:51:54 America/Mexico_City] PHP Warning:  require_once(../models/UsuarioModel.php): Failed to open stream: No such file or directory in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 14:51:54 America/Mexico_City] PHP Fatal error:  Uncaught Error: Failed opening required '../models/UsuarioModel.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home4/ewsanali/public_html/controller/usuarioController.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 3
+[07-Oct-2024 15:07:29 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method Usuario::obtenerContadorXuser() in /home4/ewsanali/public_html/controller/usuarioController.php:68
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 68
+[07-Oct-2024 15:07:29 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method Usuario::obtenerContadorXuser() in /home4/ewsanali/public_html/controller/usuarioController.php:82
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 82
+[07-Oct-2024 15:10:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method Usuario::obtenerContadorXuser() in /home4/ewsanali/public_html/controller/usuarioController.php:82
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 82
+[07-Oct-2024 15:10:16 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined method Usuario::obtenerContadorXuser() in /home4/ewsanali/public_html/controller/usuarioController.php:68
+Stack trace:
+#0 {main}
+  thrown in /home4/ewsanali/public_html/controller/usuarioController.php on line 68
