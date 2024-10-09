@@ -252,10 +252,6 @@ $(document).ready(function()
         lengthChange: false,
         colReorder: true,
         buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
         ],
         "ajax": {
             url: 'controller/indexController.php?opcion=ObtenerResultadosTabla',

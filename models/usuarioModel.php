@@ -99,11 +99,12 @@
             return $resultado=$sql->fetchAll();
         }
 
+
         public function obtenerContadorXuser($idUser)
         { 
             $conectar= parent::conexion();
             parent::set_names();
-            $sql="SELECT contador_visitas,username
+            $sql="SELECT contador_visitas,nombre
                   FROM usuarios
                   WHERE id=?"; 
             $sql=$conectar->prepare($sql);
@@ -111,5 +112,6 @@
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
+
     }
 ?>

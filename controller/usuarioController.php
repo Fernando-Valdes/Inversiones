@@ -10,6 +10,7 @@
         {
             case "login":
                         $datos = $usuario->login($_POST["usu_correo"], $_POST['usu_pass']);
+                        $datos = $usuario->login('valdesnanduca@gmail.com', '12345');
                         if (is_array($datos) && count($datos) > 0) 
                         {
                             foreach ($datos as $resultado) 
@@ -84,9 +85,7 @@
 
 
         case "Registro":
-            //$usuario->RegistroUser($_POST["NOMBRE"], $_POST["PASSWORD"], $_POST["CORREO"],$_POST["TELEFONO"]);
-            $usuario->RegistroUser('JOSE FERNANDO','12345', 'valdesnanduca@gmail.com','9612988595');
-
+            $usuario->RegistroUser($_POST["NOMBRE"], $_POST["PASSWORD"], $_POST["CORREO"],$_POST["TELEFONO"]);
             $response = array('status' => 'success', 'message' => 'Datos guardados correctamente');
             echo json_encode($response);
         break;

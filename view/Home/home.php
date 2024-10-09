@@ -57,7 +57,7 @@
 </html>
 <?php
   } else { 
-   $conectar = new Conectar(); // Instancia un objeto de la clase Conectar
-   header("Location: " . $conectar->ruta() . "../index.php"); // Llama a ruta() en el objeto instanciado
+   $conectar = new Conectar(); 
+   header("Location: " . $conectar->ruta() . "../index.php"); 
 }
 ?>

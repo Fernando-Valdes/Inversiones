@@ -9,6 +9,13 @@
         </li>
 
         <li class="blue-dirty">
+            <a href="../Calculadora/calculadoraPro.php">
+                <span class="glyphicon glyphicon-cog"></span>
+                <span class="lbl">Calculadora PRO</span>
+            </a>
+        </li>
+
+        <li class="blue-dirty">
             <a href="../Configuracion/configuracion.php">
                 <span class="glyphicon glyphicon-cog"></span>
                 <span class="lbl">Configuracion</span>
