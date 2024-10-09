@@ -8,7 +8,7 @@
                 </button>
                 <h4 class="modal-title" id="mdltitulo"></h4>
             </div>
-            <form method="post" id="contacto_form">
+            <form method="post" id="registro_form">
                 <div class="modal-body">
                     <input type="hidden" id="usu_id" name="usu_id">
 
@@ -28,13 +28,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="CORREO">CONTRASEÑA :</label>
-                        <input type="password" class="form-control" id="CORREO" name="CORREO" placeholder="Introduce tu contraseña" required>
+                        <label class="form-label" for="PASSWORD">CONTRASEÑA :</label>
+                        <input type="password" class="form-control" id="PASSWORD" name="PASSWORD" placeholder="Introduce tu contraseña" required>
                     </div>
 
                     <div class="form-group">
-                        <label class="form-label" for="CORREO">REPETIR CONTRASEÑA :</label>
-                        <input type="password" class="form-control" id="CORREO" name="CORREO" placeholder="Repite tu contraseña" required>
+                        <label class="form-label" for="PASSWORD_2">REPETIR CONTRASEÑA :</label>
+                        <input type="password" class="form-control" id="PASSWORD_2" name="PASSWORD_2" placeholder="Repite tu contraseña" required>
                     </div>
 
                 </div>

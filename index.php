@@ -77,10 +77,10 @@
 						<div class="card" style="width: 18rem;">
 							<div class="embed-responsive embed-responsive-16by9">
 								<video id="videoElement" class="embed-responsive-item" controls>
-									<source src="public/video/Bienvenida_a_EWinScore.mp4" type="video/mp4">
+									<source src="public/video/1_intro_ews.mp4" type="video/mp4">
 								</video>
                 			</div>
-							<a href="#">¿Cómo registrarse en la página de EwinScore?</a>
+							<a href="#">Introducción de la Plataforma de Apuestas Diarias <strong>ews-analisis.com.mx/</strong></a>
 						</div>
 					</div>
 
@@ -88,10 +88,10 @@
 						<div class="card" style="width: 18rem;">
 							<div class="embed-responsive embed-responsive-16by9">
 								<video id="videoElement" class="embed-responsive-item" controls>
-									<source src="public/video/Bienvenida_a_EWinScore.mp4" type="video/mp4">
+									<source src="public/video/2_Recorrido_EWinScore.mp4" type="video/mp4">
 								</video>
 							</div>
-							<a href="#">¿Cómo registrarse en la página de EwinScore?</a>
+							<a href="#">Conoce la Plataforma <strong>EWinScore</strong></a>
 						</div>
 					</div>
 
@@ -102,7 +102,7 @@
 										<source src="public/video/Bienvenida_a_EWinScore.mp4" type="video/mp4">
 									</video>
 								</div>
-								<a href="#">¿Cómo registrarse en la página de EwinScore?</a>
+								<a href="#">Bienvenido a <strong>EWinScore</strong></a>
 						</div>
 					</div>
 
@@ -110,10 +110,10 @@
 					<div class="card" style="width: 18rem;">
 							<div class="embed-responsive embed-responsive-16by9">
 								<video id="videoElement" class="embed-responsive-item" controls>
-									<source src="public/video/Bienvenida_a_EWinScore.mp4" type="video/mp4">
+									<source src="public/video/3_recargar_EwinScore.mp4" type="video/mp4">
 								</video>
                 			</div>
-							<a href="#">¿Cómo registrarse en la página de EwinScore?</a>
+							<a href="#"> Como hacer una recarga a la plataforma <strong>EWinScore</strong></a>
 						</div>
 					</div>
 				</div>

@@ -9,19 +9,18 @@
             $PassEncryp = md5($Email) . hash('sha256', $Password);
 
             $sql = "SELECT 
-                    u.id,
-                    username,
-                    password,
+                    id,
+                    nombre,
                     email,
-                    activo,
-                    enlace_registro,
+                    contador_visitas,
+                    realizo_pago,
+                    telefono,
+                    enlace_ews,
                     enlace_grupo
-                FROM usuarios u
-                INNER JOIN codigos_invitacion ON  u.id = usuario_id
+                FROM usuarios
                 WHERE email=?
                 AND password=?
                 AND activo=1";
-
 
             $stmt = $conectar->prepare($sql);
             $stmt->bindValue(1, $Email);
@@ -38,12 +37,13 @@
 
             $sql = "SELECT 
                     u.id,
-                    username,
+                    nombre,
                     password,
                     email,
                     activo,
                     enlace_registro,
-                    enlace_grupo
+                    enlace_grupo,
+                    telefono
                 FROM usuarios u
                 INNER JOIN codigos_invitacion ON  u.id = usuario_id
                 WHERE u.id = ?
@@ -76,5 +76,40 @@
             return $resultado=$sql->fetchAll();
         }
 
+        
+        public function RegistroUser($nombre,$password,$email,$telefono)
+        {
+            $PassEncryp = md5($email) . hash('sha256', $password);
+
+            $conectar= parent::conexion();
+            parent::set_names();
+
+            $sql="INSERT INTO usuarios
+                    SET 
+                        nombre=?,
+                        password=?,
+                        email=?,
+                        telefono=?";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $nombre);
+            $sql->bindValue(2, $PassEncryp);
+            $sql->bindValue(3, $email);
+            $sql->bindValue(4, $telefono);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
+
+        public function obtenerContadorXuser($idUser)
+        { 
+            $conectar= parent::conexion();
+            parent::set_names();
+            $sql="SELECT contador_visitas,username
+                  FROM usuarios
+                  WHERE id=?"; 
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $idUser);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
     }
 ?>

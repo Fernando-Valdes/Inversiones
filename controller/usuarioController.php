@@ -10,17 +10,16 @@
         {
             case "login":
                         $datos = $usuario->login($_POST["usu_correo"], $_POST['usu_pass']);
-                        $DatosDeRespuesta = array(); 
-
                         if (is_array($datos) && count($datos) > 0) 
                         {
                             foreach ($datos as $resultado) 
                             {
                                 $_SESSION["id"] = $resultado["id"];
-                                $_SESSION["username"] = $resultado["username"];
-                                $_SESSION["password"] = $resultado["password"];
+                                $_SESSION["nombre"] = $resultado["nombre"];
                                 $_SESSION["email"] = $resultado["email"];
-                                $_SESSION["enlace_registro"] = $resultado["enlace_registro"];
+                                $_SESSION["telefono"] = $resultado["telefono"];
+                                $_SESSION["realizo_pago"] = $resultado["realizo_pago"];
+                                $_SESSION["enlace_ews"] = $resultado["enlace_ews"];
                                 $_SESSION["enlace_grupo"] = $resultado["enlace_grupo"];
                             }
                             $DatosDeRespuesta["Validar"] = 1;
@@ -82,5 +81,15 @@
             $datos=$usuario->obtenerContadorXuser($_POST["idUser"]);  
             echo json_encode($datos);
         break;
-        }
+
+
+        case "Registro":
+            //$usuario->RegistroUser($_POST["NOMBRE"], $_POST["PASSWORD"], $_POST["CORREO"],$_POST["TELEFONO"]);
+            $usuario->RegistroUser('JOSE FERNANDO','12345', 'valdesnanduca@gmail.com','9612988595');
+
+            $response = array('status' => 'success', 'message' => 'Datos guardados correctamente');
+            echo json_encode($response);
+        break;
+
+    }
 ?>

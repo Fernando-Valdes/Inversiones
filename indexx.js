@@ -60,10 +60,7 @@ function init()
     {
         event.preventDefault();  
         $('#ModalRegistro').modal('show');    
-        const botonB = document.getElementById("BtnRegistro");
-        botonB.disabled = true; 
     });
-
 
 
     $('#contacto_form').on('submit', function(e) 
@@ -103,6 +100,60 @@ function init()
                 });
             }
         });
+    });
+
+
+    $('#registro_form').on('submit', function(e) 
+    {
+        e.preventDefault();
+        var formData = new FormData($("#registro_form")[0]);
+
+        const botonB = document.getElementById("BtnRegistro");
+        botonB.disabled = true; 
+
+        if($('#PASSWORD').val() == $('#PASSWORD_2').val())
+        {
+            $.ajax({
+                url: "controller/usuarioController.php?opcion=Registro",
+                type: "POST",
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(datos) 
+                {
+                    $('#registro_form')[0].reset(); 
+                    $("#ModalRegistro").modal('hide'); 
+                    
+                    swal({
+                        title: "¡Registro éxitoso!",
+                        text: "¡Ya puedes ingresar al sistema!",
+                        type: "success",
+                        confirmButtonClass: "btn-success"
+                    });
+                },
+                error: function(jqXHR, textStatus, errorThrown) 
+                {
+                    console.error("Error en la petición AJAX:", textStatus, errorThrown);
+                    swal({
+                        title: "Error!",
+                        text: "el correo ingresado ya fue registrado",
+                        type: "error",
+                        confirmButtonClass: "btn-danger"
+                    });
+                    botonB.disabled = false; 
+                }
+            });
+        }
+        else
+        {
+            swal({
+                title: "Error!",
+                text: "Las contraseñas no son iguales",
+                type: "error",
+                confirmButtonClass: "btn-danger"
+            });
+            botonB.disabled = false; 
+        }
     });
 }
 

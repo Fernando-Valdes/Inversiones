@@ -40,19 +40,6 @@
             return $resultado=$sql->fetchAll();
         }
 
-        public function obtenerContadorXuser($idUser)
-        { 
-            $conectar= parent::conexion();
-            parent::set_names();
-            $sql="SELECT contador_visitas,username
-                  FROM usuarios
-                  WHERE id=?"; 
-            $sql=$conectar->prepare($sql);
-            $sql->bindValue(1, $idUser);
-            $sql->execute();
-            return $resultado=$sql->fetchAll();
-        }
-
         public function GuardarContadorXuser($idUser)
         {
             $conectar= parent::conexion();
