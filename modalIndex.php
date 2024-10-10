@@ -22,15 +22,13 @@
                        <span class="glyphicon glyphicon-ok"></span> <strong>Agrega tu propio link de referidos y comparte con tus invitados.</strong> <br>
                        <span class="glyphicon glyphicon-ok"></span> <strong>Si tienes un grupo de EWinScore, podrás integrarlo en tu perfil.</strong> <br>
                        <span class="glyphicon glyphicon-ok"></span> <strong>Accede a métricas detalladas sobre las visitas de tus referidos.</strong> <br>
-                       <span class="glyphicon glyphicon-ok"></span> <strong>Publicidad de contenido exclusivo.</strong> <br><br><br>
-                       ¡Y mucho más por venir! <br>
-                       Si deseas más información sobre cómo convertirte en usuario <strong>VIP</strong>, contacta a nuestro soporte. <br>
-                       ¡Estamos aquí para ayudarte a crecer! <br>
-                       <strong>contacto@ews-analisis.com.mx </strong>
+                       <span class="glyphicon glyphicon-ok"></span> <strong>Publicidad de contenido exclusivo.</strong> <br>
                        <strong></p>
+                       <button type="button" id="BntModaRegistro" class="btn btn-rounded btn-success" data-dismiss="modal">Registrarse grátis</button>
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" id="BntCerrar" class="btn btn-rounded btn-success" data-dismiss="modal">Cerrar</button>
+                    <button type="button" id="BntCerrar" class="btn btn-rounded btn-primary" data-dismiss="modal">Cerrar</button>
                 </div>
             </form>
         </div>

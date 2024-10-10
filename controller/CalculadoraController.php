@@ -79,6 +79,7 @@
 
 
                 $sub_array[] = $dia;
+                $sub_array[] = $formatter->format($fechaActual);
                 $sub_array[] ="$". number_format($ganancia1, 2);
                 $sub_array[] ="$". number_format($saldo1, 2);
                 $sub_array[] ="$". number_format($ganancia2, 2);

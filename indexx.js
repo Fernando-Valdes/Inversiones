@@ -55,11 +55,23 @@ function init()
         $('#ModalContactanos').modal('show');    
     });
 
-
     $(document).on("click", "#btnRegistrarse", function(event) 
     {
         event.preventDefault();  
         $('#ModalRegistro').modal('show');    
+    });
+
+    $(document).on("click", "#BntModaRegistro", function(event) 
+    {
+        event.preventDefault();  
+        $('#ModalRegistro').modal('show');    
+        $('#ModalIndex').modal('hide');  
+    });
+
+    $(document).on("click", "#btnVideos", function(event) 
+    {
+        event.preventDefault();  
+        $('#ModalVideos').modal('show');    
     });
 
 

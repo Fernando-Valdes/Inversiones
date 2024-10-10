@@ -52,7 +52,9 @@
 						</div>
 						<div class="mobile-menu-right-overlay"></div>
 						<div class="dropdown dropdown-typical">
-						<button type="button" name="action" id="btnContactanos" class="btn btn-inline btn-warning"> Contáctanos</button>
+							<button type="button" name="action" id="btnRegistrarse" class="btn btn-inline btn-warning"> Registrarse gratis</button>
+							<button type="button" name="action" id="btnContactanos" class="btn btn-inline btn-warning"> Contáctanos</button>
+							<button type="button" name="action" id="btnVideos" class="btn btn-inline btn-warning"> Videos Tutoriales</button>
 						</div>
 					</div>
 				</div>
@@ -71,55 +73,6 @@
 					<div class="card-block">
 
 
-			<div class="col-xl-12">
-                <div class="row">
-                    <div class="col-sm-3">
-						<div class="card" style="width: 18rem;">
-							<div class="embed-responsive embed-responsive-16by9">
-								<video id="videoElement" class="embed-responsive-item" controls>
-									<source src="public/video/1_intro_ews.mp4" type="video/mp4">
-								</video>
-                			</div>
-							<a href="#">Introducción de la Plataforma de Apuestas Diarias <strong>ews-analisis.com.mx/</strong></a>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="card" style="width: 18rem;">
-							<div class="embed-responsive embed-responsive-16by9">
-								<video id="videoElement" class="embed-responsive-item" controls>
-									<source src="public/video/2_Recorrido_EWinScore.mp4" type="video/mp4">
-								</video>
-							</div>
-							<a href="#">Conoce la Plataforma <strong>EWinScore</strong></a>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="card" style="width: 18rem;">
-								<div class="embed-responsive embed-responsive-16by9">
-									<video id="videoElement" class="embed-responsive-item" controls>
-										<source src="public/video/Bienvenida_a_EWinScore.mp4" type="video/mp4">
-									</video>
-								</div>
-								<a href="#">Bienvenido a <strong>EWinScore</strong></a>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-					<div class="card" style="width: 18rem;">
-							<div class="embed-responsive embed-responsive-16by9">
-								<video id="videoElement" class="embed-responsive-item" controls>
-									<source src="public/video/3_recargar_EwinScore.mp4" type="video/mp4">
-								</video>
-                			</div>
-							<a href="#"> Como hacer una recarga a la plataforma <strong>EWinScore</strong></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-			</div>
 
 
 					<form method="POST">
@@ -144,7 +97,6 @@
 								<thead>
 									<tr>
 										<th class="d-none d-sm-table-cell" style="width: 3%;">Día</th>
-										<th class="d-none d-sm-table-cell" style="width: 3%;">Fecha</th>
 										<th class="d-none d-sm-table-cell" style="width: 3%;">Ganancia 1ra Apuesta (MXN)</th>
 										<th class="d-none d-sm-table-cell" style="width: 3%;">Saldo 1ra Apuesta (MXN)</th>
 										<th class="d-none d-sm-table-cell" style="width: 3%;">Ganancia 2da Apuesta (MXN)</th>
@@ -161,12 +113,6 @@
 								</tbody>
 							</table>
 						</div>
-						<div class="card">
-							<div class="card-body">
-							<h5 class="alert alert-success text-center" role="alert"> Estadísticas Diarias de Inversión</h5>
-								<canvas id="investmentChart"></canvas>
-							</div>
-						</div>
 						</div>
 					</div>
 					</div>
@@ -175,17 +121,16 @@
 		</div>
 	</div>
 
-
 	<nav class="side-menu">
-	<button type="button" name="action" id="btnRegistrarse" class="btn btn-inline btn-success"> Registrarse</button>
-	<button type="button" name="action" id="btnContactanos" class="btn btn-inline btn-success"> Registrarse EWinScore</button>
-	<button type="button" name="action" id="btnContactanos" class="btn btn-inline btn-success"> Solicita Bono $48 MX</button>
+		<button type="button" name="action" id="btnContactanos" class="btn btn-inline btn-success"> Registrarse EWinScore</button>
+		<button type="button" name="action" id="btnContactanos" class="btn btn-inline btn-success"> Solicita Bono $48 MX</button>
 	</nav>
 	
-
 	<?php require_once("modalIndex.php");?>
 	<?php require_once("modalContactanos.php");?>
+	<?php require_once("modalVideos.php");?>
 	<?php require_once("view/Registro/modalRegistrarse.php");?>
+
 	<!-- Contenido -->
 	<script src="public/js/lib/jquery/jquery.min.js"></script>
 	<script src="public/js/lib/tether/tether.min.js"></script>

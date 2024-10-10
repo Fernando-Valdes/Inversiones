@@ -20,54 +20,8 @@
 	<div class="page-content">
 			<div class="container-fluid">
 		        <section class="card">
-					<header class="card-header text-center" role="alert" style="background-color: #079651; color: white;" id="ContadorGeneral" name="ContadorGeneral" >
-					</header>
 					<div class="card-block">
-                        <div class="col-xl-12">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="card" style="width: 18rem;">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <video id="videoElement" class="embed-responsive-item" controls>
-                                                <source src="public/video/1_intro_ews.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                        <a href="#">Introducción de la Plataforma de Apuestas Diarias <strong>ews-analisis.com.mx/</strong></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="card" style="width: 18rem;">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <video id="videoElement" class="embed-responsive-item" controls>
-                                                <source src="public/video/2_Recorrido_EWinScore.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                        <a href="#">Conoce la Plataforma <strong>EWinScore</strong></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="card" style="width: 18rem;">
-                                            <div class="embed-responsive embed-responsive-16by9">
-                                                <video id="videoElement" class="embed-responsive-item" controls>
-                                                    <source src="public/video/Bienvenida_a_EWinScore.mp4" type="video/mp4">
-                                                </video>
-                                            </div>
-                                            <a href="#">Bienvenido a <strong>EWinScore</strong></a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3">
-                                <div class="card" style="width: 18rem;">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <video id="videoElement" class="embed-responsive-item" controls>
-                                                <source src="public/video/3_recargar_EwinScore.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                        <a href="#"> Como hacer una recarga a la plataforma <strong>EWinScore</strong></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
+                     
                         </div>
 					<form method="POST">
 						<div class="box-typical box-typical-padding">
@@ -122,10 +76,6 @@
 		</div>
 	</div>
 
-    
-	<?php require_once("modalIndex.php");?>
-	<?php require_once("modalContactanos.php");?>
-	<?php require_once("view/Registro/modalRegistrarse.php");?>
 	<!-- Contenido -->
 
 	<?php require_once("../MainJs/js.php");?>
