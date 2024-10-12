@@ -2,7 +2,7 @@ var tabla;
 
 function init()
 {
-    $("#usuario_form").on("submit",function(e) 
+    $("#configuracion_form").on("submit",function(e) 
     {
         guardar(e);	
     });
@@ -11,7 +11,7 @@ function init()
 function guardar(e) 
 { 
     e.preventDefault();
-    var formData = new FormData($("#usuario_form")[0]);
+    var formData = new FormData($("#configuracion_form")[0]);
 
     $.ajax({
         url: "../../controller/usuarioController.php?opcion=guardar",
@@ -21,10 +21,22 @@ function guardar(e)
         processData: false,
         success: function(datos) 
         {
-            //onsole.log(datos); 
-            $('#usuario_form')[0].reset(); 
-            $("#modalnuevo").modal('hide'); 
-            $('#usuario_data').DataTable().ajax.reload(); 
+            $.post("../../controller/usuarioController.php?opcion=DatosDelUserLogin", function (data) 
+            {
+                $('#id_Configuracion').val(data.id);
+                $('#NOMBRE').val(data.nombre);
+                $('#CORREO').val(data.email);  
+                $('#TELEFONO').val(data.telefono);   
+                $('#ENLACE_EWINSCORE').val(data.enlace_ews);
+                $('#ENLACE_GRUPO_WHATSAPP').val(data.enlace_grupo);  
+                $('#ENLACE').val(data.comparte_enlace + data.id);  
+        
+                if(data.realizo_pago ==0)
+                {
+                    const botonB = document.getElementById("Guardar");
+                    botonB.disabled = true;   
+                }
+            });  
             
             swal({
                 title: "Inversiones!",
@@ -49,61 +61,22 @@ function guardar(e)
 
 $(document).ready(function()
 {     
-    tabla=$('#usuario_data').dataTable({
-        "aProcessing": true,
-        "aServerSide": true,
-        dom: 'Bfrtip',
-        "searching": true,
-        lengthChange: false,
-        colReorder: true,
-        buttons: [		          
-                'copyHtml5',
-                'excelHtml5',
-                'csvHtml5',
-                'pdfHtml5'
-                ],
-        "ajax":{
-            url: '../../controller/configuracionController.php?opcion=Enlaces',
-            type : "post",
-            data: function(d) 
-            {
-                d.idUser = $('#user_idx').val();
-            },
-            dataType : "json",						
-            error: function(e){
-                console.log(e.responseText);	
-            }
-        },
-        "bDestroy": true,
-        "responsive": true,
-        "bInfo":true,
-        "iDisplayLength": 10,
-        "autoWidth": false,
-        "language": {
-            "sProcessing":     "Procesando...",
-            "sLengthMenu":     "Mostrar _MENU_ registros",
-            "sZeroRecords":    "No se encontraron resultados",
-            "sEmptyTable":     "Ningún dato disponible en esta tabla",
-            "sInfo":           "Mostrando un total de _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando un total de 0 registros",
-            "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-            "sInfoPostFix":    "",
-            "sSearch":         "Buscar:",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
-            "sLoadingRecords": "Cargando...",
-            "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
-                "sPrevious": "Anterior"
-            },
-            "oAria": {
-                "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-                "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-            }
-        }     
-    }).DataTable(); 
+    $.post("../../controller/usuarioController.php?opcion=DatosDelUserLogin", function (data) 
+    {
+        $('#id_Configuracion').val(data.id);
+        $('#NOMBRE').val(data.nombre);
+        $('#CORREO').val(data.email);  
+        $('#TELEFONO').val(data.telefono);   
+        $('#ENLACE_EWINSCORE').val(data.enlace_ews);
+        $('#ENLACE_GRUPO_WHATSAPP').val(data.enlace_grupo);  
+        $('#ENLACE').val(data.comparte_enlace + data.id);  
+
+        if(data.realizo_pago ==0)
+        {
+            const botonB = document.getElementById("Guardar");
+            botonB.disabled = true;   
+        }
+    });  
 });
 
 function editar(idUser)

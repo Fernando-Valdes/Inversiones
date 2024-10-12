@@ -122,8 +122,10 @@
 	</div>
 
 	<nav class="side-menu">
-		<button type="button" name="action" id="btnContactanos" class="btn btn-inline btn-success"> Registrarse EWinScore</button>
-		<button type="button" name="action" id="btnContactanos" class="btn btn-inline btn-success"> Solicita Bono $48 MX</button>
+		<a href="" id="registro" class="btn btn-primary">Registrarse EWinScore</a>
+		<br>
+		<br>
+		<a href="" id="bono" class="btn btn-primary">Solicita Bono $48 MX</a>
 	</nav>
 	
 	<?php require_once("modalIndex.php");?>

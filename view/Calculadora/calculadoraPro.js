@@ -118,6 +118,10 @@ $(document).ready(function()
         lengthChange: false,
         colReorder: true,
         buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
         ],
         "ajax": {
             url: '../../controller/CalculadoraController.php?opcion=ObtenerResultadosTabla',
@@ -154,6 +158,15 @@ $(document).ready(function()
             }
         }
     });
+
+    $.post("../../controller/usuarioController.php?opcion=DatosDelUserLogin", function (data) 
+    {
+        if(data.realizo_pago ==0)
+        {
+            const botonA = document.getElementById("Calcular");
+            botonA.disabled = true; 
+        }
+    });  
 
     init(); 
 });

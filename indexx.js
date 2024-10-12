@@ -231,8 +231,7 @@ function updateChart(labels, ganancias, saldos)
 
 $(document).ready(function() 
 {
-   idUser = getUrlParameter('IdUser') || 1;
-   //$('#ModalContactanos').modal('show');
+   idUser = getUrlParameter('Iduser') || 1;
    $('#ModalIndex').modal('show');
 
     var video = document.getElementById('videoElement');
@@ -241,7 +240,7 @@ $(document).ready(function()
     $.post("controller/indexController.php?opcion=guardarContadorXuseryObtenerEnlaces", {idUser : idUser}, function (data) 
     {
         data = JSON.parse(data);
-        $('#registro').attr('href', data.enlace_registro);
+        $('#registro').attr('href', data.enlace_ews);
         $('#registro').attr('target', '_blank');
         $('#bono').attr('href', data.enlace_grupo);
         $('#bono').attr('target', '_blank');
@@ -252,7 +251,6 @@ $(document).ready(function()
         data = JSON.parse(data);
         $('#ContadorGeneral').html("CÁLCULO DE APUESTAS DIARIAS <br> Eres el visitante Número: " + data.contador_general + ""); 
     }); 
-
 
 
 
@@ -315,7 +313,7 @@ $(document).on("click","#BntCerrar", function()
 var getUrlParameter = function(sParam) 
 {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
+        sURLVariables = sPageURL.split('?'),
         sParameterName,
         i;
 

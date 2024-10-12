@@ -16,7 +16,8 @@
                     realizo_pago,
                     telefono,
                     enlace_ews,
-                    enlace_grupo
+                    enlace_grupo,
+                    comparte_enlace
                 FROM usuarios
                 WHERE email=?
                 AND password=?
@@ -57,21 +58,25 @@
             return $Resultado;
         }
 
-        public function ActualziarEnlacesXid($idUser, $enlaceEwinscore, $EnlaceWhatsApp)
+        public function ActualziarEnlacesXid($idUser,$nombre, $telefono, $enlaceEwinscore, $EnlaceWhatsApp)
         {
             $conectar= parent::conexion();
             parent::set_names();
 
-            $sql="UPDATE codigos_invitacion 
+            $sql="UPDATE usuarios 
                   SET
-                    enlace_registro = ?,
+                    nombre = ?,
+                    telefono = ?,
+                    enlace_ews = ?,
                     enlace_grupo = ?
-                WHERE usuario_id = ?";
+                WHERE id = ?";
 
             $sql=$conectar->prepare($sql);
-            $sql->bindValue(1, $enlaceEwinscore);
-            $sql->bindValue(2, $EnlaceWhatsApp);
-            $sql->bindValue(3, $idUser);
+            $sql->bindValue(1, $nombre);
+            $sql->bindValue(2, $telefono);
+            $sql->bindValue(3, $enlaceEwinscore);
+            $sql->bindValue(4, $EnlaceWhatsApp);
+            $sql->bindValue(5, $idUser);
             $sql->execute();
             return $resultado=$sql->fetchAll();
         }
@@ -111,6 +116,31 @@
             $sql->bindValue(1, $idUser);
             $sql->execute();
             return $resultado=$sql->fetchAll();
+        }
+
+        public function DatosDelUserLogin($id)
+        {
+            $conectar = parent::conexion();
+            parent::set_names();
+
+            $sql = "SELECT 
+                    id,
+                    nombre,
+                    email,
+                    contador_visitas,
+                    realizo_pago,
+                    telefono,
+                    enlace_ews,
+                    enlace_grupo,
+                    comparte_enlace
+                FROM usuarios
+                WHERE id=?";
+
+            $stmt = $conectar->prepare($sql);
+            $stmt->bindValue(1, $id);
+            $stmt->execute();
+            $Resultado = $stmt->fetchAll();
+            return $Resultado;
         }
 
     }

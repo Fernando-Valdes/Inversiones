@@ -10,7 +10,6 @@
         {
             case "login":
                         $datos = $usuario->login($_POST["usu_correo"], $_POST['usu_pass']);
-                        $datos = $usuario->login('valdesnanduca@gmail.com', '12345');
                         if (is_array($datos) && count($datos) > 0) 
                         {
                             foreach ($datos as $resultado) 
@@ -22,6 +21,7 @@
                                 $_SESSION["realizo_pago"] = $resultado["realizo_pago"];
                                 $_SESSION["enlace_ews"] = $resultado["enlace_ews"];
                                 $_SESSION["enlace_grupo"] = $resultado["enlace_grupo"];
+                                $_SESSION["comparte_enlace"] = $resultado["comparte_enlace"];
                             }
                             $DatosDeRespuesta["Validar"] = 1;
                         } else 
@@ -50,7 +50,7 @@
 
 
             case "guardar":
-                    $resultado = $usuario->ActualziarEnlacesXid($_POST['usu_id'], $_POST["Ewinscore"], $_POST["WhatsApp"]);
+                    $resultado = $usuario->ActualziarEnlacesXid($_POST['id_Configuracion'], $_POST["NOMBRE"], $_POST["TELEFONO"], $_POST["ENLACE_EWINSCORE"], $_POST["ENLACE_GRUPO_WHATSAPP"]);
                
                     if ($resultado) 
                     {
@@ -88,6 +88,27 @@
             $usuario->RegistroUser($_POST["NOMBRE"], $_POST["PASSWORD"], $_POST["CORREO"],$_POST["TELEFONO"]);
             $response = array('status' => 'success', 'message' => 'Datos guardados correctamente');
             echo json_encode($response);
+        break;
+
+        case "DatosDelUserLogin":
+
+            $datos=$usuario->DatosDelUserLogin($_SESSION['id']);  
+
+            if(is_array($datos)==true and count($datos)>0)
+            {
+                foreach($datos as $row)
+                {
+                    $resultado["id"] = $row["id"]  ;
+                    $resultado["nombre"] = $row["nombre"];
+                    $resultado["email"] = $row["email"];  
+                    $resultado["telefono"] = $row["telefono"];
+                    $resultado["realizo_pago"] = $row["realizo_pago"];  
+                    $resultado["enlace_ews"] = $row["enlace_ews"];  
+                    $resultado["enlace_grupo"] = $row["enlace_grupo"];  
+                    $resultado["comparte_enlace"] = $row["comparte_enlace"];
+                }
+                echo json_encode($resultado);
+            }
         break;
 
     }

@@ -16,7 +16,7 @@
             {
                 foreach($datos as $row)
                 {
-                    $output["enlace_registro"] = $row["enlace_registro"];
+                    $output["enlace_ews"] = $row["enlace_ews"];
                     $output["enlace_grupo"] = $row["enlace_grupo"];
                 }
                 echo json_encode($output);

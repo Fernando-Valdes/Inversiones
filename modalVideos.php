@@ -41,6 +41,14 @@
                 <br>
                 <br>
 
+                <a href="#">5.- Aprende a realizar una apuesta en <strong>EWinScore</strong></a>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video id="videoElement" class="embed-responsive-item" controls>
+                        <source src="public/video/4_Aprende_a_realizar_una apuesta.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <br>
+                <br>
 
             </div>
         </div>

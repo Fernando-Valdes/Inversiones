@@ -6,7 +6,7 @@
         {
             $conectar= parent::conexion();
             parent::set_names();
-            $sql="SELECT enlace_registro, enlace_grupo FROM codigos_invitacion WHERE usuario_id=?"; 
+            $sql="SELECT enlace_ews, enlace_grupo FROM usuarios WHERE id=?"; 
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1, $Id);
             $sql->execute();
