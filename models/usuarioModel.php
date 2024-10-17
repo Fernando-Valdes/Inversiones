@@ -17,7 +17,9 @@
                     telefono,
                     enlace_ews,
                     enlace_grupo,
-                    comparte_enlace
+                    comparte_enlace,
+                    autorizacion,
+                    control
                 FROM usuarios
                 WHERE email=?
                 AND password=?
@@ -44,7 +46,9 @@
                     activo,
                     enlace_registro,
                     enlace_grupo,
-                    telefono
+                    telefono,
+                    autorizacion,
+                    control
                 FROM usuarios u
                 INNER JOIN codigos_invitacion ON  u.id = usuario_id
                 WHERE u.id = ?
@@ -94,7 +98,9 @@
                         nombre=?,
                         password=?,
                         email=?,
-                        telefono=?";
+                        telefono=?,
+                        autorizacion='cfcd208495d565ef66e7dff9f98764da',
+                        control='a5ae0861febff1aeefb6d5b759d904a6'";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1, $nombre);
             $sql->bindValue(2, $PassEncryp);
@@ -132,7 +138,9 @@
                     telefono,
                     enlace_ews,
                     enlace_grupo,
-                    comparte_enlace
+                    comparte_enlace,
+                    autorizacion,
+                    control
                 FROM usuarios
                 WHERE id=?";
 
@@ -141,6 +149,57 @@
             $stmt->execute();
             $Resultado = $stmt->fetchAll();
             return $Resultado;
+        }
+
+        public function get_TodosLosUsuarios()
+        {
+            $conectar = parent::conexion();
+            parent::set_names();
+
+            $sql = "SELECT 
+                    id,
+                    nombre,
+                    email,
+                    contador_visitas,
+                    realizo_pago,
+                    telefono,
+                    enlace_ews,
+                    enlace_grupo,
+                    comparte_enlace,
+                    autorizacion,
+                    control
+                FROM usuarios";
+
+            $stmt = $conectar->prepare($sql);
+            $stmt->execute();
+            $Resultado = $stmt->fetchAll();
+            return $Resultado;
+        }
+
+        public function DesactivarUsuario($id)
+        {
+            $conectar= parent::conexion();
+
+            parent::set_names();
+            $sql="UPDATE usuarios SET autorizacion='cfcd208495d565ef66e7dff9f98764da' where id=?";
+
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $id);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
+
+        public function ActivarUsuario($id)
+        {
+            $conectar= parent::conexion();
+
+            parent::set_names();
+            $sql="UPDATE usuarios SET autorizacion='c4ca4238a0b923820dcc509a6f75849b' where id=?";
+
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1, $id);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
         }
 
     }

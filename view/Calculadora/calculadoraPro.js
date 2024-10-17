@@ -161,7 +161,7 @@ $(document).ready(function()
 
     $.post("../../controller/usuarioController.php?opcion=DatosDelUserLogin", function (data) 
     {
-        if(data.realizo_pago ==0)
+        if(data.autorizacion =='cfcd208495d565ef66e7dff9f98764da')
         {
             const botonA = document.getElementById("Calcular");
             botonA.disabled = true; 

@@ -22,6 +22,18 @@
             </a>
         </li>
 
+        <?php 
+            if($_SESSION['control']=="2a2e9a58102784ca18e2605a4e727b5f")
+            {?>
+                <li class="blue-dirty">
+                    <a href="../Usuario/usuario.php">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="lbl">Usuarios</span>
+                    </a>
+                </li>
+            <?php }
+        ?>
+
     </ul>
 </nav>
 

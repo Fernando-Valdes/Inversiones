@@ -71,7 +71,7 @@ $(document).ready(function()
         $('#ENLACE_GRUPO_WHATSAPP').val(data.enlace_grupo);  
         $('#ENLACE').val(data.comparte_enlace + data.id);  
 
-        if(data.realizo_pago ==0)
+        if(data.autorizacion =='cfcd208495d565ef66e7dff9f98764da')
         {
             const botonB = document.getElementById("Guardar");
             botonB.disabled = true;   

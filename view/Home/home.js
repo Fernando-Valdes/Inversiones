@@ -26,7 +26,39 @@ $(document).ready(function()
             barColors: ["#1AB244"], 
         });
 
+        const mp = new MercadoPago('', 
+        {
+            locale: 'es-MX' 
+        });
+
+        mp.checkout({
+            preference: {
+                id: '<?php echo $preference->id; ?>' // ID de la preferencia creada
+            },
+            render: {
+                container: '.cho-container', // Selector del botón de pago
+                label: 'Pagar', // Texto del botón de pago
+            }
+        });
     }); 
+
+    $.post("../../controller/usuarioController.php?opcion=DatosDelUserLogin", function (data) 
+    {
+        if(data.autorizacion =='cfcd208495d565ef66e7dff9f98764da')
+        {
+            $('#ModalNoPago').modal('show');
+
+            const mp = new MercadoPago('APP_USR-2968dd6c-c1d3-4081-b69a-b2a17f2be926',{
+                    locale: 'es-MX'
+                });
+
+            mp.bricks();create("wallet", "Wallet_boton", {
+                initialization: {
+                    preferenceId: '1'
+                }
+            })
+        }
+    });  
 });
 
 

@@ -18,10 +18,11 @@
                                 $_SESSION["nombre"] = $resultado["nombre"];
                                 $_SESSION["email"] = $resultado["email"];
                                 $_SESSION["telefono"] = $resultado["telefono"];
-                                $_SESSION["realizo_pago"] = $resultado["realizo_pago"];
                                 $_SESSION["enlace_ews"] = $resultado["enlace_ews"];
                                 $_SESSION["enlace_grupo"] = $resultado["enlace_grupo"];
                                 $_SESSION["comparte_enlace"] = $resultado["comparte_enlace"];
+                                $_SESSION["autorizacion"] = $resultado["autorizacion"];
+                                $_SESSION["control"] = $resultado["control"];
                             }
                             $DatosDeRespuesta["Validar"] = 1;
                         } else 
@@ -102,13 +103,63 @@
                     $resultado["nombre"] = $row["nombre"];
                     $resultado["email"] = $row["email"];  
                     $resultado["telefono"] = $row["telefono"];
-                    $resultado["realizo_pago"] = $row["realizo_pago"];  
                     $resultado["enlace_ews"] = $row["enlace_ews"];  
                     $resultado["enlace_grupo"] = $row["enlace_grupo"];  
                     $resultado["comparte_enlace"] = $row["comparte_enlace"];
+                    $resultado["autorizacion"] = $row["autorizacion"];
+                    $resultado["control"] = $row["control"];
                 }
                 echo json_encode($resultado);
             }
+        break;
+
+        case "get_TodosLosUsuarios":
+            $datos=$usuario->get_TodosLosUsuarios();
+            $data= Array();
+
+            foreach($datos as $row)
+            {
+                $sub_array = array();
+                $sub_array[] = $row["nombre"];
+                $sub_array[] = $row["email"];
+                $sub_array[] = $row["telefono"];
+                $sub_array[] = $row["contador_visitas"];
+
+                
+                if($row["autorizacion"] == "cfcd208495d565ef66e7dff9f98764da")
+                {
+                    $sub_array[] = '<span class="label label-pill label-warning">Versión Gratuita</span>';
+
+                    $sub_array[] = '<button type="button" onClick="editar('.$row["id"].');"  id="'.$row["id"].'" class="btn btn-inline btn-warning btn-sm ladda-button"><i class="fa fa-edit"></i></button>'.
+                    '<button type="button" onClick="Activar('.$row["id"].');"  id="'.$row["id"].'" class="btn btn-inline btn-success btn-sm ladda-button"><i class="glyphicon glyphicon-ok"></i></button>';
+                }
+                else
+                {
+                    $sub_array[] = '<span class="label label-pill label-success">Suscripción VIP pagada</span>';
+
+                    $sub_array[] = '<button type="button" onClick="editar('.$row["id"].');"  id="'.$row["id"].'" class="btn btn-inline btn-warning btn-sm ladda-button"><i class="fa fa-edit"></i></button>'.
+                    '<button type="button" onClick="Desactivar('.$row["id"].');"  id="'.$row["id"].'" class="btn btn-inline btn-danger btn-sm ladda-button"><i class="glyphicon glyphicon-remove"></i></button>';
+                }
+
+
+                $data[] = $sub_array;
+            }
+
+            $results = array(
+                "sEcho"=>1,
+                "iTotalRecords"=>count($data),
+                "iTotalDisplayRecords"=>count($data),
+                "aaData"=>$data);
+            echo json_encode($results);
+
+        break;
+
+        case "DesactivarUsuario":
+            $usuario->DesactivarUsuario($_POST["id"]);
+        break;
+
+        case "ActivarUsuario":
+            $usuario->ActivarUsuario($_POST["id"]);
         break;
 
     }

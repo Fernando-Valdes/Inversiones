@@ -40,7 +40,7 @@
                     </div>
                     <div class="form-group">
                         <div class="float-right reset">
-                            <a href="reset-password.html">Cambiar Contraseña</a>
+                            <a href="../../index.php">Regresar al inicio</a>
                         </div>
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">

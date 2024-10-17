@@ -10,6 +10,7 @@
 </head>
 <body class="with-side-menu">
 
+    <?php // require_once("../../controller/mercadoPagoController.php");?>
     <?php require_once("../MainHeader/header.php");?>
 
     <div class="mobile-menu-left-overlay"></div>
@@ -46,11 +47,14 @@
 	</div>
 	<!-- Contenido -->
 
+	<?php require_once("modalNoPago.php");?>
 	<?php require_once("../MainJs/js.php");?>
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="https://sdk.mercadopago.com/js/v2"></script>
 	<script type="text/javascript" src="home.js"></script>
+
 
 
 </body>

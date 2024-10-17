@@ -19,7 +19,7 @@
         }
 
         public function ruta(){
-            return "http://localhost:80/inversiones/";
+            return "https://ews-analisis.com.mx/";
         }
 
     }

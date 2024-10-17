@@ -34,10 +34,21 @@
 
                 <input type="hidden" id="user_idx" value="<?php echo $_SESSION["id"] ?>"><!-- ID del Usuario-->
 
-                <div class="dropdown dropdown-typical">
+                <div class="dropdown dropdown-typical" Id="Wallet_boton">
                     <a href="#" class="dropdown-toggle no-arr">
-                        <span class="font-icon font-icon-user"></span>
-                        <span class="lblcontactonomx"><?php echo $_SESSION["nombre"] ?></span>
+                        <?php 
+                            if($_SESSION['autorizacion']=='cfcd208495d565ef66e7dff9f98764da')
+                            {?>
+                                <span class="label label-pill label-warning">Versión Gratuita</span>
+                                <div class="cho-container"></div>
+                                <?php
+                            }
+                            else
+                            {?>
+                                <span class="label label-pill label-success">Suscripción VIP pagada</span>
+                            <?php
+                            }
+                        ?>
                     </a>
                 </div>
 
