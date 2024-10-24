@@ -165,6 +165,9 @@ $(document).ready(function()
         {
             //const botonA = document.getElementById("Calcular");
             //botonA.disabled = true; 
+
+            $('#ModalNoPago').modal('show');
+            $('#NRestante').html(data.limite_user_vip); 
         }
     });  
 

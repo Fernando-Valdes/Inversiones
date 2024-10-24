@@ -202,5 +202,45 @@
             return $resultado=$sql->fetchAll();
         }
 
+        public function Get_PrecioVIP()
+        {
+            $conectar = parent::conexion();
+            parent::set_names();
+
+            $sql = "SELECT limite_user_vip, costo FROM configuraciones WHERE id=1";
+
+            $stmt = $conectar->prepare($sql);
+            $stmt->execute();
+            $Resultado = $stmt->fetchAll();
+            return $Resultado;
+        }
+
+        public function Update_CantidadRegistros()
+        {
+            $conectar= parent::conexion();
+            parent::set_names();
+
+            $sql=" UPDATE configuraciones
+                   SET limite_user_vip = limite_user_vip - 1";
+            
+            $sql=$conectar->prepare($sql);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
+
+        public function Update_Precio()
+        {
+            $conectar= parent::conexion();
+            parent::set_names();
+
+            $sql=" UPDATE configuraciones
+                   SET costo = 50.00";
+            
+            $sql=$conectar->prepare($sql);
+            $sql->execute();
+            return $resultado=$sql->fetchAll();
+        }
+
     }
 ?>
+

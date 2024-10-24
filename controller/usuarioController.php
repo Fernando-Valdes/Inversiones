@@ -10,6 +10,8 @@
         {
             case "login":
                         $datos = $usuario->login($_POST["usu_correo"], $_POST['usu_pass']);
+                        $datosConfiguracion=$usuario->Get_PrecioVIP(); 
+
                         if (is_array($datos) && count($datos) > 0) 
                         {
                             foreach ($datos as $resultado) 
@@ -24,7 +26,27 @@
                                 $_SESSION["autorizacion"] = $resultado["autorizacion"];
                                 $_SESSION["control"] = $resultado["control"];
                             }
+
+                            foreach($datosConfiguracion as $row2)
+                            {
+                                if($row2["limite_user_vip"] == '0')
+                                {
+                                    $ActualizarDatos=$usuario->Update_Precio();
+                                    $datosConfiguracionActualziados=$usuario->Get_PrecioVIP(); 
+
+                                    foreach($datosConfiguracionActualziados as $row3)
+                                    {
+                                        $_SESSION["costo"] = $row3["costo"];
+                                    }
+                                }
+                                else
+                                {
+                                    $_SESSION["costo"] = $row2["costo"];
+                                }                                
+                            }
+                            
                             $DatosDeRespuesta["Validar"] = 1;
+
                         } else 
                         {
                             $DatosDeRespuesta["Validar"] = 0;
@@ -104,12 +126,14 @@
         case "DatosDelUserLogin":
 
             $datos=$usuario->DatosDelUserLogin($_SESSION['id']);  
+            $datosConfiguracion=$usuario->Get_PrecioVIP(); 
+
 
             if(is_array($datos)==true and count($datos)>0)
             {
                 foreach($datos as $row)
                 {
-                    $resultado["id"] = $row["id"]  ;
+                    $resultado["id"] = $row["id"];
                     $resultado["nombre"] = $row["nombre"];
                     $resultado["email"] = $row["email"];  
                     $resultado["telefono"] = $row["telefono"];
@@ -119,8 +143,15 @@
                     $resultado["autorizacion"] = $row["autorizacion"];
                     $resultado["control"] = $row["control"];
                 }
+
+                foreach($datosConfiguracion as $row2)
+                {
+                    $resultado["limite_user_vip"] = $row2["limite_user_vip"];
+                }
+
                 echo json_encode($resultado);
             }
+
         break;
 
         case "get_TodosLosUsuarios":

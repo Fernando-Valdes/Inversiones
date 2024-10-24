@@ -6,21 +6,27 @@
     header('Content-Type: application/json');
 
 
-        switch ($_GET["opcion"]) 
+        switch ($_GET["collection_status"]) 
         {
-            case "PagoExitoso";
-            $datos=$ObtenerDatos->ObtenerEnlaceInvitacionEwinscoreXid($_POST['idUser']);  
-            
-            if(is_array($datos)==true and count($datos)>0)
+            case "approved";
+            $datos=$usuario->ActivarUsuario($_SESSION['id']);  
+            $datosConfiguracion=$usuario->Get_PrecioVIP(); 
+
+
+            if(is_array($datosConfiguracion)==true and count($datosConfiguracion)>0)
             {
-                foreach($datos as $row)
+                foreach($datosConfiguracion as $row)
                 {
-                    $output["enlace_ews"] = $row["enlace_ews"];
-                    $output["enlace_grupo"] = $row["enlace_grupo"];
+                    if($row["limite_user_vip"] =! '0')
+                    {
+                        $datosConfiguracion=$usuario->Update_CantidadRegistros(); 
+                    }
                 }
-                echo json_encode($output);
+
+                $conexion = new Conectar(); 
+                header("Location:" . $conexion->ruta() . "view/Logout/logout.php");
             }
 
-        break;
+            break;
         }
 ?>

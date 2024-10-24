@@ -6,26 +6,39 @@
         </header>
             <form method="post" id="usuario_form">
                 <div class="modal-body">
+
+                <video id="videoElement" class="embed-responsive-item" controls width="565" height="330">
+                    <source src="../../public/video/Anuncion_pagar.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
+                
+                <br><br>
                 <br>
-                    <p>Para habilitar el botón de cálculo y disfrutar de todos los beneficios <strong>VIP</strong>,<br>
-                       es necesario realizar un pago de suscripción. Con la cuenta VIP, podrás:<br><br>
+                    <div class="text-center">
+                        <strong>¡AVISO IMPORTANTE!</strong>
+                    </div>
 
-                       <span class="glyphicon glyphicon-ok"></span> <strong>Generar tu propio enlace de EWinScore para invitar a afiliados y que se registren con tu link.</strong> <br><br>
-                       <span class="glyphicon glyphicon-ok"></span> <strong>Agregar tu enlace de grupo de WhatsApp de EWinScore (si cuentas con uno).
-                       Compartir tu enlace en esta plataforma y ver estadísticas del número de personas que ingresen a través de él.</strong> <br><br>
-                       ----------------------------------------------------------------------------------------------------------------------
-                       Datos para realizar tu pago VIP: <br><br>
-                       
-                       <strong>Número de cuenta:</strong> 661610006348585324 <br>
-                       <strong>Banco:</strong> Klar <br>
-                       <strong>Monto:</strong> $50.00 Pesos Mexicanos (MXN) | <strong>Pago único (Vitalicio)</strong><br><br>
+                    <p><br>
+                    <strong>A partir del día 27 de octubre de 2024,</strong>
+                     nuestras herramientas solo estarán disponibles para aquellos con suscripción activa <strong>VIP.</strong> 
+                     Esta suscripción será de pago <strong>único y vitalicio</strong>, lo que significa que solo pagarás una vez y disfrutarás de acceso ilimitado.
 
-                       ----------------------------------------------------------------------------------------------------------------------
+                     Los primeros  50 usuarios en realizar su pago, tendrán un <strong>50% de descuento</strong>,
+                     por lo que solo pagarán <strong>$25 pesos mexicanos</strong> por su suscripción <strong>vitalicia.</strong>
+                     Una vez que se alcance el límite de 50 usuarios, el costo de la suscripción VIP será de $50 pesos mexicanos.<br><br>
 
-                       Después de realizar la transferencia, por favor envía tu comprobante a: <strong>contacto@ews-analisis.com.mx </strong><br>
+                    ¡No dejes pasar esta oportunidad de asegurar tu acceso VIP con el mejor precio! 
+                    <br><br>
+                    ----------------------------------------------------------------------------------------------------------------------
+                   
+                    <br>
+                    <div class="text-center">
+                        <strong>QUEDAN: </strong>
+                        <span id="NRestante"></span> Lugares disponibles
+                    </div>
+                    <br>
 
-                       ¡Pronto vendrán más sorpresas y funcionalidades para seguir mejorando tu experiencia! 🚀
-
+                    ----------------------------------------------------------------------------------------------------------------------
                 </div>
                 <div class="modal-footer">
                     <button type="button" id="BntCerrar" class="btn btn-rounded btn-primary" data-dismiss="modal">Cerrar</button>

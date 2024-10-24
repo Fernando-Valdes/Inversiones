@@ -2,18 +2,22 @@
     require '../../vendor/autoload.php'; 
     MercadoPago\SDK::setAccessToken("APP_USR-4381823441007119-101621-bea5a3214947203bdbbcb905af5ec2c0-2034927598");
     $preference = new MercadoPago\Preference();
+    $conexion = new Conectar();
+    $DireccionUrlPagoExito = $conexion->ruta() . "controller/pagoController.php";
 
+
+    
     $item = new MercadoPago\Item();
     $item->id = $_SESSION['id'];
     $item->title = 'Pago Suscripción VIP';
     $item->quantity = 1;
-    $item->unit_price = 100.00; 
+    $item->unit_price = $_SESSION['costo'];
     $preference->items = array($item);
 
     $preference->back_urls = array(
-        "success" => "http://localhost/inversiones/pago_exitoso.php?",
-        "failure" => "https://tu-sitio.com/pago_fallido",
-        "pending" => "https://tu-sitio.com/pago_pendiente"
+        "success" => "".$DireccionUrlPagoExito."",
+        "failure" => "",
+        "pending" => ""
     );
 
     $preference->auto_return = "approved";

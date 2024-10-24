@@ -38,7 +38,7 @@
                             <div class="col-sm-4">
                                 <div class="form-group">
                                     <label class="form-label" for="CORREO">CORREO ELÉCTRONICO : </label>
-                                    <input type="text" class="form-control" id="CORREO" name="CORREO" required>
+                                    <input type="text" class="form-control" id="CORREO" name="CORREO" required disabled>
                                 </div>
                             </div>
 
@@ -63,7 +63,7 @@
 					<div class="col-xl-12">
                         <div class="form-group">
                             <label class="form-label" for="ENLACE_GRUPO_WHATSAPP">ENLACE GRUPO WHATSAPP : </label>
-                            <input type="text" class="form-control" id="ENLACE_GRUPO_WHATSAPP" name="ENLACE_GRUPO_WHATSAPP" required>
+                            <input type="text" class="form-control" id="ENLACE_GRUPO_WHATSAPP" name="ENLACE_GRUPO_WHATSAPP" required >
                         </div>
                     </div>
 
