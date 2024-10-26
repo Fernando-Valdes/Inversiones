@@ -1,6 +1,6 @@
 <?php
     require '../../vendor/autoload.php'; 
-    MercadoPago\SDK::setAccessToken("APP_USR-4381823441007119-101621-bea5a3214947203bdbbcb905af5ec2c0-2034927598");
+    MercadoPago\SDK::setAccessToken("APP_USR-4581388744575532-102613-96c2c2e2eff1c52036049f47f07c4fb4-692215791");
     $preference = new MercadoPago\Preference();
     $conexion = new Conectar();
     $DireccionUrlPagoExito = $conexion->ruta() . "controller/pagoController.php";
@@ -69,7 +69,7 @@
                                     document.addEventListener('DOMContentLoaded', function() {
                                     const container = document.querySelector('#Wallet_boton');
                                     if (container) {
-                                    const mp = new MercadoPago('APP_USR-989dc784-1982-47ef-8e0f-af2501c0fb82', {
+                                    const mp = new MercadoPago('APP_USR-4ca16517-8840-4104-a74c-38cf9a94f637', {
                                     locale: 'es-AR' 
                                     });
 
