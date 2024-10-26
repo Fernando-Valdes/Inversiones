@@ -32,6 +32,14 @@
                         <span class="lbl">Usuarios</span>
                     </a>
                 </li>
+
+                <li class="blue-dirty">
+                    <a href="../Administracion/administracion.php">
+                        <span class="glyphicon glyphicon-inbox"></span>
+                        <span class="lbl">Administración</span>
+                    </a>
+                </li>
+
             <?php }
         ?>
 

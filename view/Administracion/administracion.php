@@ -27,21 +27,13 @@
 	                        <article class="statistic-box green">
 	                            <div>
 	                                <div class="number" id="lbltotal" name="lbltotal"></div>
-	                                <div class="caption"><div>Total de visitas con tu enlace</div></div>
+	                                <div class="caption"><div>Contador General</div></div>
 	                            </div>
 	                        </article>
 	                    </div>
 					</div>
 				</div>
 			</div>
-			<section class="card">
-				<header class="card-header">
-					Grafico Estadístico
-				</header>
-				<div class="card-block">
-					<div id="divgrafico" style="height: 250px;"></div>
-				</div>
-			</section>
 			
 		</div>
 	</div>
@@ -53,7 +45,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 	<script src="https://sdk.mercadopago.com/js/v2"></script>
-	<script type="text/javascript" src="home.js"></script>
+	<script type="text/javascript" src="administracion.js"></script>
 
 
 

@@ -54,7 +54,6 @@
                         echo json_encode($DatosDeRespuesta);
             break;
 
-
             case "UserXid";
                 $datos=$usuario->EnlacesXid($_POST["idUser"]);  
                 if(is_array($datos)==true and count($datos)>0)
@@ -70,7 +69,6 @@
                 }   
 
             break;
-
 
             case "guardar":
                     $resultado = $usuario->ActualziarEnlacesXid($_POST['id_Configuracion'], $_POST["NOMBRE"], $_POST["TELEFONO"], $_POST["ENLACE_EWINSCORE"], $_POST["ENLACE_GRUPO_WHATSAPP"]);
@@ -106,7 +104,6 @@
             echo json_encode($datos);
         break;
 
-
         case "Registro":
             $usuario->RegistroUser($_POST["NOMBRE"], $_POST["PASSWORD"], $_POST["CORREO"],$_POST["TELEFONO"]);
             
@@ -121,7 +118,6 @@
 
             echo json_encode($DatosDeRespuesta);
         break;
-
 
         case "DatosDelUserLogin":
 
@@ -142,11 +138,6 @@
                     $resultado["comparte_enlace"] = $row["comparte_enlace"];
                     $resultado["autorizacion"] = $row["autorizacion"];
                     $resultado["control"] = $row["control"];
-                }
-
-                foreach($datosConfiguracion as $row2)
-                {
-                    $resultado["limite_user_vip"] = $row2["limite_user_vip"];
                 }
 
                 echo json_encode($resultado);
@@ -203,5 +194,92 @@
             $usuario->ActivarUsuario($_POST["id"]);
         break;
 
+        case "getTotalUser";
+
+            $datos=$usuario->getTotalUser();
+
+            if(is_array($datos)==true and count($datos)>0)
+            {
+                foreach($datos as $row)
+                {
+                    $output["TOTAL"] = $row["TOTAL"];
+                }
+                echo json_encode($output);
+            }
+        break;
+
+        case "getTotalUserVersionGratis";
+
+            $datos=$usuario->getTotalUserVersionGratis();
+
+            if(is_array($datos)==true and count($datos)>0)
+            {
+                foreach($datos as $row)
+                {
+                    $output["TOTAL"] = $row["TOTAL"];
+                }
+                echo json_encode($output);
+            }
+        break;
+
+        case "getTotalUserVIP";
+
+            $datos=$usuario->getTotalUserVIP();
+
+            if(is_array($datos)==true and count($datos)>0)
+            {
+                foreach($datos as $row)
+                {
+                    $output["TOTAL"] = $row["TOTAL"];
+                }
+                echo json_encode($output);
+            }
+        break;
+
+        case "GetContadorGeneral";
+
+            $datos=$usuario->GetContadorGeneral();
+
+            if(is_array($datos)==true and count($datos)>0)
+            {
+                foreach($datos as $row)
+                {
+                    $output["TOTAL"] = $row["contador_general"];
+                }
+                echo json_encode($output);
+            }
+        break;
+
+        case "GetPrimerInicioUser";
+
+            $datos=$usuario->GetPrimerInicioUser($_SESSION['id']);
+
+            if(is_array($datos)==true and count($datos)>0)
+            {
+                foreach($datos as $row)
+                {
+                    $output["primer_inicio"] = $row["primer_inicio"];
+                }
+                echo json_encode($output);
+            }
+        break;
+
+        case "UpdatePrimerInicioUser";
+                $datos=$usuario->UpdatePrimerInicioUser($_SESSION['id']);
+        break;
+
+        case "Getlimite_user_vip";
+
+            $datos=$usuario->Getlimite_user_vip();
+
+            if(is_array($datos)==true and count($datos)>0)
+            {
+                foreach($datos as $row)
+                {
+                    $output["limite_user_vip"] = $row["limite_user_vip"];
+                }
+                echo json_encode($output);
+            }
+        break;
     }
 ?>

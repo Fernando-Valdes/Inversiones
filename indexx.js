@@ -117,4 +117,41 @@ $(document).ready(function()
 
     var video = document.getElementById('videoElement');
     video.play();
+
+
+    idUser = getUrlParameter('Iduser') || 1;
+
+    $.post("controller/indexController.php?opcion=guardarContadorXuseryObtenerEnlaces", {idUser : idUser}, function (data) 
+    {
+        /*data = JSON.parse(data);
+        $('#registro').attr('href', data.enlace_ews);
+        $('#registro').attr('target', '_blank');
+        $('#bono').attr('href', data.enlace_grupo);
+        $('#bono').attr('target', '_blank');*/
+    }); 
+
+    $.post("controller/indexController.php?opcion=guardarYobtenerContadorGeneral", {}, function (data) 
+    {
+        /*data = JSON.parse(data);
+        $('#ContadorGeneral').html("CÁLCULO DE APUESTAS DIARIAS <br> Eres el visitante Número: " + data.contador_general + ""); */
+    }); 
+
 });
+
+
+var getUrlParameter = function(sParam) 
+{
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('?'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+    return null;
+};

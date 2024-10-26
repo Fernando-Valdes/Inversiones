@@ -241,6 +241,112 @@
             return $resultado=$sql->fetchAll();
         }
 
+        public function getTotalUserVIP()
+        {
+            $conectar = parent::conexion();
+            parent::set_names();
+
+            $sql = "SELECT 
+                    count(*) as TOTAL
+                FROM usuarios
+                WHERE autorizacion='c4ca4238a0b923820dcc509a6f75849b'";
+
+            $stmt = $conectar->prepare($sql);
+            $stmt->execute();
+            $Resultado = $stmt->fetchAll();
+            return $Resultado;
+        }
+
+        public function getTotalUserVersionGratis()
+        {
+            $conectar = parent::conexion();
+            parent::set_names();
+
+            $sql = "SELECT 
+                    count(*) as TOTAL
+                FROM usuarios
+                WHERE autorizacion='cfcd208495d565ef66e7dff9f98764da'";
+
+            $stmt = $conectar->prepare($sql);
+            $stmt->execute();
+            $Resultado = $stmt->fetchAll();
+            return $Resultado;
+        }
+
+        public function getTotalUser()
+        {
+            $conectar = parent::conexion();
+            parent::set_names();
+
+            $sql = "SELECT 
+                    count(*) as TOTAL
+                FROM usuarios";
+
+            $stmt = $conectar->prepare($sql);
+            $stmt->execute();
+            $Resultado = $stmt->fetchAll();
+            return $Resultado;
+        }
+
+        public function GetContadorGeneral()
+        {
+            $conectar = parent::conexion();
+            parent::set_names();
+
+            $sql = "SELECT 
+                    contador_general
+                FROM configuraciones";
+
+            $stmt = $conectar->prepare($sql);
+            $stmt->execute();
+            $Resultado = $stmt->fetchAll();
+            return $Resultado;
+        }
+
+        public function GetPrimerInicioUser($idUSer)
+        {
+            $conectar = parent::conexion();
+            parent::set_names();
+
+            $sql = "SELECT primer_inicio 
+                    FROM usuarios 
+                    WHERE id=?";
+
+            $stmt = $conectar->prepare($sql);
+            $stmt->bindValue(1, $idUSer);
+            $stmt->execute();
+            $Resultado = $stmt->fetchAll();
+            return $Resultado;
+        }
+
+        public function UpdatePrimerInicioUser($idUSer)
+        {
+            $conectar = parent::conexion();
+            parent::set_names();
+
+            $sql = "UPDATE usuarios
+                    SET primer_inicio = 0
+                    WHERE id=?";
+
+            $stmt = $conectar->prepare($sql);
+            $stmt->bindValue(1, $idUSer);
+            $stmt->execute();
+            $Resultado = $stmt->fetchAll();
+            return $Resultado;
+        }
+
+        public function Getlimite_user_vip()
+        {
+            $conectar = parent::conexion();
+            parent::set_names();
+
+            $sql = "SELECT limite_user_vip FROM configuraciones";
+
+            $stmt = $conectar->prepare($sql);
+            $stmt->execute();
+            $Resultado = $stmt->fetchAll();
+            return $Resultado;
+        }
     }
 ?>
 

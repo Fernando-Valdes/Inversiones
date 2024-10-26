@@ -18,6 +18,38 @@
 	<!-- Contenido -->
 	<div class="page-content">
 		<div class="container-fluid">
+
+		<div class="row">
+				<div class="col-xl-12">
+					<div class="row">
+						<div class="col-sm-4">
+	                        <article class="statistic-box green">
+	                            <div>
+	                                <div class="number" id="lblVIP" name="lblVIP"></div>
+	                                <div class="caption"><div>Total Suscripción VIP pagada</div></div>
+	                            </div>
+	                        </article>
+	                    </div>
+						<div class="col-sm-4">
+	                        <article class="statistic-box yellow">
+	                            <div>
+	                                <div class="number" id="lblGratis" name="lblGratis"></div>
+	                                <div class="caption"><div>Total Versión Gratuita</div></div>
+	                            </div>
+	                        </article>
+	                    </div>
+						<div class="col-sm-4">
+	                        <article class="statistic-box purple">
+	                            <div>
+	                                <div class="number" id="lbltotal" name="lbltotal"></div>
+	                                <div class="caption"><div>Total de usuarios</div></div>
+	                            </div>
+	                        </article>
+	                    </div>
+					</div>
+				</div>
+			</div>
+
 			<div class="box-typical box-typical-padding">
 				<table id="usuario_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
 					<thead>

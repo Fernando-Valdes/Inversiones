@@ -73,8 +73,8 @@ $(document).ready(function()
 
         if(data.autorizacion =='cfcd208495d565ef66e7dff9f98764da')
         {
-            //const botonB = document.getElementById("Guardar");
-            //botonB.disabled = true;   
+            const botonB = document.getElementById("Guardar");
+            botonB.disabled = true;   
         }
     });  
 });

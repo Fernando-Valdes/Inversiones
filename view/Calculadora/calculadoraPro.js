@@ -46,6 +46,13 @@ function init()
             }
         });
     });
+
+    $(document).on("click","#BntCerrarGracias", function()
+    {  
+        $.post("../../controller/usuarioController.php?opcion=UpdatePrimerInicioUser", function (data) 
+        {
+        });  
+    });
 }
 
 
@@ -163,11 +170,27 @@ $(document).ready(function()
     {
         if(data.autorizacion =='cfcd208495d565ef66e7dff9f98764da')
         {
-            //const botonA = document.getElementById("Calcular");
-            //botonA.disabled = true; 
+            const botonA = document.getElementById("Calcular");
+            botonA.disabled = true; 
 
             $('#ModalNoPago').modal('show');
-            $('#NRestante').html(data.limite_user_vip); 
+
+
+            $.post("../../controller/usuarioController.php?opcion=Getlimite_user_vip", function (data) 
+            {
+                $('#NRestante').html(data.limite_user_vip); 
+            });  
+            
+        }
+        else
+        {
+            $.post("../../controller/usuarioController.php?opcion=GetPrimerInicioUser", function (data) 
+            {
+                if(data.primer_inicio =='1')
+                {
+                    $('#modalGraciasPago').modal('show');
+                }
+            });  
         }
     });  
 

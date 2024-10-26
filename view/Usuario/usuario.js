@@ -63,6 +63,26 @@ $(document).ready(function()
             }
         }     
     }).DataTable(); 
+
+    $.post("../../controller/usuarioController.php?opcion=getTotalUser", function (data) 
+    {
+        //data = JSON.parse(data);
+        $('#lbltotal').html(data.TOTAL);
+        
+    }); 
+
+    $.post("../../controller/usuarioController.php?opcion=getTotalUserVersionGratis", function (data) 
+    {
+        //data = JSON.parse(data);
+        $('#lblGratis').html(data.TOTAL);
+    });
+
+    $.post("../../controller/usuarioController.php?opcion=getTotalUserVIP", function (data) 
+    {
+        //data = JSON.parse(data);
+        $('#lblVIP').html(data.TOTAL);
+    });
+
 });
 
 //Guardar o editar los registros del usuario
